@@ -37,12 +37,6 @@ Tell SaveMe each backup destination drive and folder
 
 `set saveme1=F:\SaveMeData\GitHub\*.*`
 
-`set source=C:\PackRatData\GitHub\*.*`
-
-Tell SaveMe each backup destination drive and folder 
-
-`set saveme1=F:\PackRatData\GitHub\*.*`
-
 
 This will be used by the actual xcopy command as such:
 
@@ -51,21 +45,13 @@ This will be used by the actual xcopy command as such:
 
 To add more drives, simply copy and paste new lines:
 
-
 `set saveme2=G:\SaveMeData\GitHub\*.*`
-
-`set saveme2=G:\PackRatData\GitHub\*.*`
-
 
 `xcopy %source% %saveme2% /E /D /Y >> %logfile%`
 
 and another:
 
-
 `set saveme3=H:\SaveMeData\GitHub\*.*`
-
-`set saveme3=H:\PackRatData\GitHub\*.*`
-
 
 `xcopy %source% %saveme3% /E /D /Y >> %logfile%`
 
